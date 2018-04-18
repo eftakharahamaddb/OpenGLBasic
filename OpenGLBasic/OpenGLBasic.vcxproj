@@ -77,11 +77,11 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>D:\vcc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\vcc\include\glm;D:\vcc\include\SOIL\original;D:\vcc\include\SOIL;D:\vcc\OpenGLBasic\OpenGLBasic;D:\vcc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>D:\vcc\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -98,13 +98,13 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>D:\vcc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\vcc\include\glm;D:\vcc\include\SOIL\original;D:\vcc\include\SOIL;D:\vcc\OpenGLBasic\OpenGLBasic;D:\vcc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalLibraryDirectories>D:\vcc\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -122,6 +122,35 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="EntryPoint.cpp" />
+    <ClCompile Include="GLStart.cpp" />
+    <ClCompile Include="md_Shader.cpp" />
+    <ClCompile Include="md_Texture.cpp" />
+    <ClCompile Include="md_Texture2D.cpp" />
+    <ClCompile Include="Methods.cpp" />
+    <ClCompile Include="SmileyFace.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Constants.hpp" />
+    <ClInclude Include="EntryPoint.hpp" />
+    <ClInclude Include="GLStart.hpp" />
+    <ClInclude Include="md_Shader.hpp" />
+    <ClInclude Include="md_Texture.hpp" />
+    <ClInclude Include="md_Texture2D.hpp" />
+    <ClInclude Include="Methods.hpp" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SmileyFace.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="default.frag" />
+    <None Include="default.vs" />
+    <None Include="smiley.frag" />
+    <None Include="smiley.vs" />
+    <None Include="texture.frag" />
+    <None Include="texture.vs" />
+    <None Include="texture_double.frag" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="OpenGLBasic.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

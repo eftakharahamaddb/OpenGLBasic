@@ -13,10 +13,124 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\gl">
+      <UniqueIdentifier>{7068c1a0-f93e-4d3c-b229-a4a86a117bf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gl">
+      <UniqueIdentifier>{9731916c-125a-4319-80d3-95996db33c12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\glfw_glew_specific">
+      <UniqueIdentifier>{d92cd11d-5b3b-47d3-aa43-bc439bb1074b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\glfw_glew_specific">
+      <UniqueIdentifier>{152c76f3-8256-4695-810c-75906da04800}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gl\shaders">
+      <UniqueIdentifier>{2569ec4b-c87d-4512-8485-3043194f9624}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gl\shaders">
+      <UniqueIdentifier>{79289885-4675-461f-8463-7aa4f83fdda0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\shaders">
+      <UniqueIdentifier>{75f887de-1e28-47f0-8d0e-0354a93b6e97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gl\textures">
+      <UniqueIdentifier>{66752c88-e7b1-49de-bf30-f8d36b9f488f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gl\textures">
+      <UniqueIdentifier>{6fa432f8-be87-487f-86fd-3f78a16592a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\textures">
+      <UniqueIdentifier>{68d2b700-1332-44aa-bdd1-72608671d01d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\smileyface">
+      <UniqueIdentifier>{c2a0c2c8-44ad-4c9b-9157-8c335680e18b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gl\commons">
+      <UniqueIdentifier>{7613db35-be88-4d4b-8591-324430a6ec7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gl\commons">
+      <UniqueIdentifier>{65a3c088-b5ef-42bf-826c-0d26920638c8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="EntryPoint.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="GLStart.cpp">
+      <Filter>Source Files\gl</Filter>
     </ClCompile>
+    <ClCompile Include="EntryPoint.cpp">
+      <Filter>Source Files\glfw_glew_specific</Filter>
+    </ClCompile>
+    <ClCompile Include="md_Shader.cpp">
+      <Filter>Source Files\gl\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="md_Texture.cpp">
+      <Filter>Source Files\gl\textures</Filter>
+    </ClCompile>
+    <ClCompile Include="md_Texture2D.cpp">
+      <Filter>Source Files\gl\textures</Filter>
+    </ClCompile>
+    <ClCompile Include="SmileyFace.cpp">
+      <Filter>Source Files\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="Methods.cpp">
+      <Filter>Source Files\gl\commons</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GLStart.hpp">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="EntryPoint.hpp">
+      <Filter>Header Files\glfw_glew_specific</Filter>
+    </ClInclude>
+    <ClInclude Include="md_Shader.hpp">
+      <Filter>Header Files\gl\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="md_Texture.hpp">
+      <Filter>Header Files\gl\textures</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="md_Texture2D.hpp">
+      <Filter>Header Files\gl\textures</Filter>
+    </ClInclude>
+    <ClInclude Include="SmileyFace.hpp">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="Constants.hpp">
+      <Filter>Header Files\gl\commons</Filter>
+    </ClInclude>
+    <ClInclude Include="Methods.hpp">
+      <Filter>Header Files\gl\commons</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="default.vs">
+      <Filter>Resource Files\shaders</Filter>
+    </None>
+    <None Include="default.frag">
+      <Filter>Resource Files\shaders</Filter>
+    </None>
+    <None Include="texture.vs">
+      <Filter>Resource Files\textures</Filter>
+    </None>
+    <None Include="texture.frag">
+      <Filter>Resource Files\textures</Filter>
+    </None>
+    <None Include="texture_double.frag">
+      <Filter>Resource Files\textures</Filter>
+    </None>
+    <None Include="smiley.vs">
+      <Filter>Resource Files\smileyface</Filter>
+    </None>
+    <None Include="smiley.frag">
+      <Filter>Resource Files\smileyface</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="OpenGLBasic.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>
